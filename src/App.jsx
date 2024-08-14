@@ -204,8 +204,8 @@ function App() {
 
       <Routes>
         <Route exact path="personal-portfolio/" element={<Home />} />
-        <Route path="personal-portfolio/about" element={<About />} />
-        <Route path="personal-portfolio/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
 
