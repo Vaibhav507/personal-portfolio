@@ -203,9 +203,9 @@ function App() {
         </div>
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route exact path="personal-portfolio/" element={<Home />} />
+        <Route path="personal-portfolio/about" element={<About />} />
+        <Route path="personal-portfolio/contact" element={<Contact />} />
 
       </Routes>
 
