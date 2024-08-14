@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { RiGithubLine, RiMailLine, RiLinkedinLine } from "@remixicon/react";
 import { useGSAP } from "@gsap/react";
