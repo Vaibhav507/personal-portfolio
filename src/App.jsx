@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { RiGithubLine, RiMailLine, RiLinkedinLine } from "@remixicon/react";
 import { useGSAP } from "@gsap/react";
@@ -157,7 +156,7 @@ function App() {
 
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router >
 
       <div id="cursor"></div>
 
@@ -204,7 +203,7 @@ function App() {
         </div>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
 
