@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  gap: 100px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.greeting {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.home {
+  padding: 175px 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.main {
+  font-size: 96px;
+}
+
+.logo-menu {
+  color: black;
+  font-size: 32px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.menu-icon {
+  width: 40px;
+}
+
+#cursor {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  font-size: 5px;
+  z-index: 100;
+  mix-blend-mode: difference;
+}
+
+img {
+  position: absolute;
+  bottom: -155px;
+  right: 0;
+  width: 20%;
+  background-color: black;
+}
+
+.menu {
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 20;
+  left: 100%;
+  color: #111;
+}
+
+.pages {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  top: 20%;
+  left: 10%;
+}
+
+.pages p{
+  cursor: pointer;
+  font-size: 64px;
+  opacity: 0;
+  transform: translateY(-50px);
+  visibility: hidden;
+}
+
+.pages p {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pages .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: black;
+}
+
+a {
+  color: inherit; /* Use the original text color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+  color: inherit; /* Reset visited link color */
+}
+
+a:hover, a:focus {
+  color: inherit; /* Keep the original color on hover or focus */
+  text-decoration: none; /* No underline on hover or focus */
+}
+
+hr {
+  opacity: 0.1;
+}
+
+.divider {
+  width: 0;
+  height: 1px;
+  background-color: white;
+  opacity: 0.4;
+}
+
+
+.about-me {
+  font-size: 40px;
+  width: 80%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 175px 150px;
+  gap: 200px;
+  padding-bottom: 100px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  position: absolute;
+  right: 30px;
+  bottom: 200px;
+}
+
+.icons {
+  background-color: #111;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  opacity: 0;
+  transform: translateY(-50px);
+  visibility: hidden;
+}
+
+.social-name {
+  background-color: #111;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-1,.social-2,.social-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+::-webkit-scrollbar {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: #333;
+  border: 5px solid #222;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 110px 150px;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.footer-heading {
+  padding-top: -20px;
+  font-size: 96px;
+}
+
+.footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goto-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  border-radius: 1000px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.goto-mail:hover {
+  background-color: white;
+  color: #111;
+}
+
+.personal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.footer-icons {
+  background-color: #222;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.footer-icons:hover {
+  background-color: white;
+  color: #111;
+  scale: 1.1;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coming {
+  text-decoration: line-through;
+}
+
+.soon {
+  font-size: 16px;
+  color: #111;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 175px 150px;
+  gap: 80px;
+  padding-bottom: 50px;
+}
+
+.contact-headline {
+  font-size: 52px;
+}
+
+.contact-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+
