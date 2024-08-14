@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { RiArrowRightUpLine, RiHeart3Fill, RiGithubLine, RiLinkedinLine } from "@remixicon/react";
+import React from "react";
 
 function Footer() {
 

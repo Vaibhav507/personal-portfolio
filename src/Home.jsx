@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(TextPlugin);
 import { useEffect, useRef } from "react";
+import React from "react";
 
 function Home() {
 
