@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL='/personal-portfolio'" />
+    <meta http-equiv="refresh" content="0; URL='/'" />
   </head>
   <body>
     <script type="text/javascript">
-      // Redirect to the correct path
       var path = window.location.pathname;
-      window.location.replace(window.location.origin + '/personal-portfolio' + path);
+      if (path !== '/') {
+        window.location.replace('/personal-portfolio' + path);
+      } else {
+        window.location.replace('/');
+      }
     </script>
   </body>
 </html>
