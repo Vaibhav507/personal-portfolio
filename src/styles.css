@@ -344,7 +344,7 @@ hr {
   gap: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   
   .greeting {
     font-size: 14px;
