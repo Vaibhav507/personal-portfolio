@@ -20,8 +20,6 @@ function Footer() {
 
         tl.pause()
 
-
-
         buttonRef.current.addEventListener("mouseenter",function () {
             tl.play()
             
@@ -47,7 +45,7 @@ function Footer() {
             <hr />
             <div className="personal">
                 <p>@{currentYear}</p>
-                <p>Designed and Created with <RiHeart3Fill fill="red"/> by Vaibhav Madan</p>
+                <p>Designed and Created with <RiHeart3Fill className="heart" fill="red"/> by Vaibhav Madan</p>
             </div>
             
         </div>

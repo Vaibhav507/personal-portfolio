@@ -81,9 +81,9 @@ function Contact() {
             </div>
             <div className="divider"></div>
             <div className="contact-bottom">
-            <div className="footer-buttons">
-                <a href="mailto:vaibhavpratham507@gmail.com"><div className="goto-mail" ref={buttonRef}><p className="button-text">Send me a mail</p><RiArrowRightUpLine className="arrow" /></div></a>
-                <div className="social-buttons">
+            <div className="footer-buttons contact-me-bottom">
+                <a href="mailto:vaibhavpratham507@gmail.com" className="mail-contact-me"><div className="goto-mail" ref={buttonRef}><p className="button-text">Send me a mail</p><RiArrowRightUpLine className="arrow" /></div></a>
+                <div className="social-buttons contact-social-buttons">
                     <a href="https://github.com/Vaibhav507" target="_blank"><RiGithubLine className="footer-icons"/></a>
                     <a href="https://www.linkedin.com/in/vaibhav-madan-386927200/" target="_blank"><RiLinkedinLine className="footer-icons"/></a>
                     <a href="https://www.instagram.com/madanvaibhav11/" target="_blank"><RiInstagramLine className="footer-icons"/></a>

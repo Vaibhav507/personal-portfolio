@@ -10,6 +10,7 @@ body {
   background-color: #111;
   color: white;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
 
 #root {
@@ -18,6 +19,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .greeting {
@@ -125,17 +127,17 @@ img {
 }
 
 a {
-  color: inherit; /* Use the original text color */
-  text-decoration: none; /* Remove underline */
+  color: inherit;
+  text-decoration: none;
 }
 
 a:visited {
-  color: inherit; /* Reset visited link color */
+  color: inherit;
 }
 
 a:hover, a:focus {
-  color: inherit; /* Keep the original color on hover or focus */
-  text-decoration: none; /* No underline on hover or focus */
+  color: inherit;
+  text-decoration: none;
 }
 
 hr {
@@ -340,6 +342,343 @@ hr {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+}
+
+@media (max-width: 375px) {
+  
+  .greeting {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .home {
+    padding: 220px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  
+  .main {
+    font-size: 27px;
+  }
+  
+  .logo-menu {
+    color: black;
+    font-size: 27px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    padding: 0px 30px;
+  }
+  
+  .logo {
+    font-size: 27px;
+  }
+  
+  .menu-icon {
+    width: 35px;
+  }
+  
+  #cursor {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    font-size: 5px;
+    z-index: 100;
+    mix-blend-mode: difference;
+  }
+  
+  img {
+    position: absolute;
+    bottom: -155px;
+    right: 0;
+    width: 20%;
+    background-color: black;
+  }
+  
+  .menu {
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 20;
+    left: 100%;
+    color: #111;
+  }
+  
+  .pages {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    top: 20%;
+    left: 10%;
+  }
+  
+  .pages p{
+    cursor: pointer;
+    font-size: 32px;
+    opacity: 0;
+    transform: translateY(-50px);
+    visibility: hidden;
+  }
+  
+  .pages p {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .pages .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: black;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  hr {
+    opacity: 0.1;
+  }
+  
+  .divider {
+    width: 0;
+    height: 1px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  
+  
+  .about-me {
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 180px 40px;
+    gap: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  
+  .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    position: absolute;
+    right: 40px;
+    bottom: 100px;
+  }
+  
+  .icons {
+    background-color: #111;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    opacity: 0;
+    transform: translateY(-50px);
+    visibility: hidden;
+  }
+  
+  .social-name {
+    background-color: #111;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-1,.social-2,.social-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  ::-webkit-scrollbar {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #222;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background-color: #333;
+    border: 5px solid #222;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 40px;
+    gap: 30px;
+    font-size: 14px;
+  }
+  
+  .footer-heading {
+    padding-top: -20px;
+    font-size: 40px;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .goto-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 1000px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .goto-mail:hover {
+    background-color: white;
+    color: #111;
+  }
+  
+  .personal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .heart {
+    width: 10px;
+  }
+
+  .personal p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    font-size: 9px;
+  }
+  
+  .footer-icons {
+    background-color: #222;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  
+  .footer-icons:hover {
+    background-color: white;
+    color: #111;
+    scale: 1.1;
+  }
+  
+  .social-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .coming {
+    text-decoration: line-through;
+  }
+  
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 180px 40px;
+    gap: 40px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+  }
+  
+  .contact-headline {
+    font-size: 26px;
+  }
+  
+  .contact-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contact-me-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-social-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mail-contact-me {
+    width: 100%;
+  }
+
 }
 
 
