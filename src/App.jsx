@@ -149,8 +149,7 @@ function App() {
 
       mailIcon.addEventListener("mouseenter",()=>mailTl.play())
       mailIcon.addEventListener("mouseleave",()=>mailTl.reverse())
-
-      
+ 
 
   })
 
@@ -161,7 +160,7 @@ function App() {
       <div id="cursor"></div>
 
       <div className="navbar">
-            <p className="logo">VM</p>
+            <Link to="/"><p className="logo">VM</p></Link>
             <svg className="menu-icon" width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="63" height="63" rx="31.5" fill="white"/>
                 <rect x="14" y="30" width="36.67" height="3" rx="1.5" fill="black"/>
@@ -172,7 +171,7 @@ function App() {
 
       <div className="menu">
             <div className="navbar">
-            <p className="logo-menu">VM</p>
+            <Link to="/"><p className="logo-menu">VM</p></Link>
             <svg className="close-icon" width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="63" height="63" rx="31.5" fill="white"/>
                 <rect x="20.4308" y="17.4745" width="36.67" height="3" rx="1.5" transform="rotate(45 20.4308 17.4745)" fill="black"/>
@@ -188,15 +187,15 @@ function App() {
             <div className="socials">
               <div className="social-1">
                 <p className="social-name github">GitHub</p>
-                <RiGithubLine color="white" className="icons githubIcon"></RiGithubLine>
+                <a href="https://github.com/Vaibhav507" target="_blank"><RiGithubLine color="white" className="icons githubIcon"></RiGithubLine></a>
               </div>
               <div className="social-2">
                 <p className="social-name linkedin">LinkedIn</p>
-                <RiLinkedinLine color="white" className="icons linkedinIcon"></RiLinkedinLine>
+                <a href="https://www.linkedin.com/in/vaibhav-madan-386927200/" target="_blank" rel="noopener noreferrer"><RiLinkedinLine color="white" className="icons linkedinIcon"></RiLinkedinLine></a>
               </div>
               <div className="social-3">
                 <p className="social-name mail">Connect on Mail</p>
-                <RiMailLine color="white" className="icons mailIcon"></RiMailLine>
+                <a href="mailto:vaibhavpratham507@gmail.com"><RiMailLine color="white" className="icons mailIcon"></RiMailLine></a>
               </div>
                   
             </div>      
@@ -206,11 +205,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
 
-      
-      
     </Router>
       
   )
